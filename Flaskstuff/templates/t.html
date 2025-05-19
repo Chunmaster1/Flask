@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Favorite Form</title>
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">   
+   </head>
+   <body>
+      
+      <form action="/results" method="POST">
+         <h2>A Few Of My Favorite Things</h2>
+         <label>Favorite Color: <input type="text" name="color"/></label><br>
+         <label>Lucky Number: <input type="number" name="luck_num"/></label><br>
+         <label>Favorite Class: <input type="text" name="fav_class"/></label><br>
+         <label>Favorite Pixar Movie: <input type="text" name="best_pix"/></label><br>
+         <button>Submit</button>
+      </form>
+   </body>
+</html>
